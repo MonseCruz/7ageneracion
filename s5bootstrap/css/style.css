@@ -21,6 +21,7 @@ section{
 aside{
     background: salmon;
     border: black solid;
+    height: 100%;
 }
 article{
     background: palevioletred;
