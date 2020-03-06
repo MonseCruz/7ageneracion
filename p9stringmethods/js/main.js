@@ -123,10 +123,11 @@ console.log(`El área de un circulo con radio ${r} es igual a ${result_area}`) *
                 console.log("El triángulo es rectángulo")
             }else{ console.log("El triángulo  no es rectángulo")}
         }
-    }
+    }if(sideOne < sideTwo){
     if(Math.pow(sideThree,2) == Math.pow(sideOne,2) + Math.pow(sideTwo,2)){
         console.log("El triángulo es rectángulo");
       }else{ console.log("El triángulo  no es rectángulo")}
+    }
 
 
 
