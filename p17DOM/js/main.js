@@ -92,16 +92,17 @@ var avgAssistences = totalAssistanceGeneral/totalKoders;
     <td>{prácticas del koder}</td>
 </tr>*/
 
-var rowPractice = $("#practices-container");
+var rowPractice = $("#practices-container");  
 
 function tablePractices(){
-    for(i=0; i<kodersDb.length; i++){
+    for(i=0; i<deliveredPracticesUnderTen.length; i++){
         var num =  i + 1;
+    
         rowPractice.append(
             '<tr>'
             +'<td>'+num+'</td>'
-            +'<td>'+kodersDb[i].name + kodersDb[i].lastName +'</td>'
-            +'<td>'+kodersDb[i].deliveredPractices+'</td>'
+            +'<td>'+deliveredPracticesUnderTen[i].name + deliveredPracticesUnderTen[i].lastName +'</td>'
+            +'<td>'+deliveredPracticesUnderTen[i].deliveredPractices+'</td>'
             +'</tr>'
         );
     }
@@ -117,13 +118,13 @@ function tablePractices(){
 var rowAssistence = $("#assistances-container");
 var i;
 function tableAssistences(){
-    for(i=0; i<kodersDb.length; i++){
+    for(i=0; i<totalAssistanceUnderTwenty.length; i++){
         var num =  i + 1;
         rowAssistence.append(
             '<tr>'
             +'<td>'+num+'</td>'
-            +'<td>'+kodersDb[i].name + kodersDb[i].lastName +'</td>'
-            +'<td>'+kodersDb[i].totalAssistance+'</td>'
+            +'<td>'+totalAssistanceUnderTwenty[i].name + totalAssistanceUnderTwenty[i].lastName +'</td>'
+            +'<td>'+totalAssistanceUnderTwenty[i].totalAssistance+'</td>'
             +'</tr>'
         );
     }
