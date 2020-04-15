@@ -1,0 +1,36 @@
+.naranjita{
+    border: solid orange;
+} 
+.moradito{
+    border: solid purple;
+}
+.magentita{
+    border: solid magenta;
+    justify-content: center;
+}
+.verdesin{
+    border: solid green;
+}
+.azulin{
+    border: solid blue;
+}
+.rojin{
+    border: solid red;
+}
+.amarillin{
+    border: solid yellow;
+  
+}
+.row{
+    margin: 2%;
+}
+article{
+    margin: 1%;
+}
+.banner{
+    background-image: url(../img/banner.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+

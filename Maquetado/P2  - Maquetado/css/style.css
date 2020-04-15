@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+header{
+    background: cyan;
+    border: deeppink solid;
+    margin-bottom: 2%;
+}
+nav{
+    margin: 0 auto 1px;
+    background: magenta;
+    width: 80%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    height: 80%;
+}
+section{
+    background: slateblue;
+    margin-right: 20px;
+    width: 60%;
+    border: black solid;
+}
+aside{
+    width: calc(40% - 20px);
+    background: salmon;
+    border: black solid;
+    width: calc(40% -25px);
+}
+article{
+    background: palevioletred;
+    margin: 2% auto;
+    width: 95%;
+    height: 25%;
+}
+
+footer{
+    display: inline-block;
+    width: 100%;
+    border: mediumorchid solid;
+    background: mediumpurple;
+}
+

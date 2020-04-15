@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+.cotainer{
+    display: flex;
+}
+header{
+    background: cyan;
+    border: deeppink solid;
+}
+nav{
+    background: magenta;
+}
+
+section{
+    background: slateblue;
+    border: black solid;
+}
+aside{
+    background: salmon;
+    border: black solid;
+    height: 100%;
+}
+article{
+    background: palevioletred;
+}
+
+footer{
+    border: mediumorchid solid;
+    background: mediumpurple;
+}
+ 
