@@ -1,3 +1,6 @@
+import { rejects } from "assert";
+import { resolve } from "dns";
+
 /*Construir, aplanar y pintar una pared */ 
 const muro = {
     estaConstruido: false,
@@ -7,7 +10,7 @@ const muro = {
 
 //funciones que ejecutan callbacks
 
-function construir (muroAConstruir, callback){
+/* function construir (muroAConstruir, callback){
     setTimeout(()=>{
         let erroDeConstruccion = null
         muroAConstruir.estaConstruido = true
@@ -48,6 +51,47 @@ construir(muro, (erroDeConstruccion,muroConstruido)=>{
             console.log('muro: ',muroPintado)
         })
     })
+}) */
+
+//Funciones promificadas
+
+function construirPromificada(muroAConstruir){
+    return new Promise((resolve,reject) => {
+        construir(muroAConstruir,(error,muroConstruido)=>{
+            if (error) {
+                reject(error)
+                return
+            }
+            resolve(muroConstruido)
+        })
+    })
+}
+
+function aplanarPromificada(muroAAplanar){
+    return new Promise((resolve,reject) => {
+        construir(muroAAplanar,(error,muroAplanado)=>{
+            if (error) {
+                reject(error)
+                return
+            }
+            resolve(muroAplanado)
+        })
+    })
+}
+
+function pintarPromificada(muroAPintar){
+    return new Promise((resolve,reject) => {
+        construir(muroAPintar,(error,muroPintado)=>{
+            if (error) {
+                reject(error)
+                return
+            }
+            resolve(muroPintado)
+        })
+    })
+}
+
+construirPromificada(muro)
+.then(muroConstruido => {
+    con
 })
-
-
