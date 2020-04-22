@@ -1,0 +1,22 @@
+{
+    "name": "express-practica",
+    "version": "1.0.0",
+    "description": "practice express",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon index.js"
+    },
+    "keywords": [
+        "express",
+        "practica",
+        "kodemia"
+    ],
+    "author": "@Monse",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.3"
+    }
+}
